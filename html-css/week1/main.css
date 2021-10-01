@@ -37,6 +37,10 @@ ul li {
     background-color: rgba(217, 222, 223, 0.53);
 }
 
+.information-item {
+    color: blue;
+}
+
 .date {
     color: cornflowerblue;
     font-size: 16px;
