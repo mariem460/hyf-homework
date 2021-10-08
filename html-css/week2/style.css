@@ -4,24 +4,16 @@ body {
 .header{
     display: flex;
     flex-direction: row;
+    margin-left: 500px;
    
 }
-.logo img {
-    height: 125px;
-    width: 125px;
-    padding-right: 550px;
-}
-.header {
-    display: flex;
-    flex-direction: row;
-    
-}
+
 .nav-bar {
     display: flex;
     flex-direction: row;
-    border: solid 1px black;
-    height: 50px; 
-    background-color: rgb(146, 176, 198);
+    
+    background-color: rgb(232, 236, 239);
+
 }
 a {
     color: rgb(0, 0, 0);
@@ -31,8 +23,8 @@ a {
     
 }
 .nav-bar-link {
-    padding-top: 8px;
-    margin-left: 170px;
+    padding: 8px;
+   
     padding-right: 100px;
     
 }
@@ -50,7 +42,6 @@ a {
 
 }
 .introduction {
-    background-color: rgb(155, 174, 213);
     font-size: 20px;
     width: 25%;
     height: 30%;
@@ -61,7 +52,6 @@ a {
     font-size: 20px;
     width: 30%;
     height: 50%;
-    background-color: rgb(155, 174, 213);
     padding: 30px;
 }
 h2 {
@@ -130,9 +120,8 @@ ul li {
     .nav-bar {
         display: flex;
         flex-direction: column;
-        background-color: rgb(146, 176, 198);
         height: 100px;
-        padding-bottom: 30px;
+        padding-bottom: 100px;
     }
     .main {
         display: flex;
