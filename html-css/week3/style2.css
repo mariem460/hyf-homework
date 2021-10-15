@@ -1,0 +1,81 @@
+body {
+    height: 100%;
+    margin: 0px ;
+    
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    background-color: white; 
+}
+.title h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    padding-left: 400px;
+    margin-top:0px ;
+}
+
+.title img {
+    float: left;
+    width: 120px;
+    height: 120px;
+
+}
+.services-flight {
+    background-image: url("https://www.nogarlicnoonions.com/images/uploads/TRAVEL/Travel%20is%20important.jpg");
+    background-repeat: no-repeat, repeat;
+    width: 100%;
+    height: 800px;
+    padding-top: 5px;
+    
+}
+.services-flight h3 {
+    margin-left: 50px;
+}   
+.introduction {
+    width: 600px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+    
+}
+.step2-form-container {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-left: 400px;
+}
+.flex-child1 {
+    width: 200px;
+    display: flex;
+    flex-direction: column;  
+    
+}
+
+.flex-child2 {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.items2 {
+    margin: 10px;
+}
+.radio-buttons {
+    margin-left: 400px;
+    margin-bottom: 200px;
+
+}
+.step2-button {
+    width: 100px;
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+
+  
+  
