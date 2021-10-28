@@ -8,9 +8,14 @@ console.log (`You will be ${age} years old in 2027`);
 let dogYearOfBirth = 2020;
 let dogYearFuture = 2027;
 let dogYear = (dogYearFuture - dogYearOfBirth)*7 ;
+let humanYear = (dogYearFuture - dogYearOfBirth);
 let shouldShowResultInDogYears = true;
 if (shouldShowResultInDogYears){
     console.log(`Your dog will be ${dogYear} dog years old in 2027`);
+}
+else{
+    console.log(`Your dog will be ${humanYear} human years old in 2027`);
+
 }
 
 
@@ -48,13 +53,12 @@ else if (housePrice2 < 1.000){
 /*start up name*/
 let firstWords = ["Easy", "awsome", "Corporate", "hello", "Imagine"];
 let secondWords = ["tech", "magic", "now", "future", "new"];
-var foodItems = ["Bannana", "Apple", "Orange"];
-var randomFirstWords = firstWords[Math.floor(Math.random() * firstWords.length)];
-var randomSecondWords = secondWords[Math.floor(Math.random() * secondWords.length)];
-var startupName = randomFirstWords +" "+ randomSecondWords;
-var numOfCharc = startupName.length;
-console.log(startupName);
-console.log(`the startup name will have ${numOfCharc} charcters`)
+let foodItems = ["Bannana", "Apple", "Orange"];
+let randomFirstWords = firstWords[Math.floor(Math.random() * firstWords.length)];
+let randomSecondWords = secondWords[Math.floor(Math.random() * secondWords.length)];
+let startupName = randomFirstWords +" "+ randomSecondWords;
+let numOfCharc = startupName.length;
+console.log(`the startup name is "${startupName}" and it will contains ${numOfCharc} charcters`)
 
 
 
