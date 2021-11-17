@@ -20,10 +20,10 @@ const travelInformation = {
   speed: 50,
   destinationDistance: 432,
 };
-let time = (travelInformation.destinationDistance / travelInformation.speed) * 60;
+const time = (travelInformation.destinationDistance / travelInformation.speed) * 60;
 
-function timeConvert(n) {
-  const num = n;
+function timeConvert(number) {
+  const num = number;
   const hours = (num / 60);
   const rhours = Math.floor(hours);
   const minutes = (hours - rhours) * 60;
@@ -66,12 +66,12 @@ percentage();
 //NOnoN0nOYes 
 const notes = [];
 function saveNote(content, id){
-  const obj = {
+  const objNotes = {
     content: content,
     id:id
   }
-  notes.push(obj);
-  console.log(obj);
+  notes.push(objNotes);
+  console.log(objNotes);
 }
 saveNote("hello", 1);
 saveNote("hej", 2);
