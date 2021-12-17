@@ -181,19 +181,7 @@ document
     end.innerHTML = "Game Over";}, time * 1000);
 })
 
-/*document.getElementById("sPresser").addEventListener("click", function(){
-    countS++;
-    const numberOfPress = document.getElementById("startS");
-    numberOfPress.innerHTML = countS;
-    
-})
-document.getElementById("lPresser").addEventListener("click", function(){
-    countL++;
-    const numberOfPress = document.getElementById("startL");
-    numberOfPress.innerHTML = countL;
-    
-});
-*/
+
 document.getElementById("sPresser").addEventListener("keydown", function(event){
     if (event.key == "s") {
         countS++;
@@ -201,16 +189,5 @@ document.getElementById("sPresser").addEventListener("keydown", function(event){
         numberOfPress.innerHTML = countS;
     }
 })
-/*
-function handleEvent(event) {
-  if (event.key == "s") {
-    sCount.innerHTML = countS++;
-    sPressCount.push(countS);
-  }
-  if (event.key == "l") {
-    lCount.innerHTML = countP++;
-    lPressCount.push(countP);
-  }
-}
-*/
+
 
