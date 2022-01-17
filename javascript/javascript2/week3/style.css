@@ -1,0 +1,50 @@
+.first-div {
+    margin-bottom: 40px;
+}
+.container {
+    text-align: center;
+}
+aside {
+    background: #fe9;
+    border-radius: 1em;
+    display: inline-block;
+    padding: 1em;
+    transform: scale(.9);
+    transform-origin: 0 0;
+    transition: transform .6s;
+    user-select: none;
+    width: 400px;
+    height: 200px;
+  }
+  
+h1 {
+    text-align: center;
+    background-color: bisque;
+}
+#button-game {
+    background-color: rgb(184, 158, 208);
+    padding: 10px;
+}
+#seconds {
+    padding: 10px;
+}
+.keysContainer{
+    margin: 40px;
+    height: 200px;
+    width: 600px;
+    margin-left: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+ 
+}
+#lPresser {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+#sPresser {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
