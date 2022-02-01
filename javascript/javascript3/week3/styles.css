@@ -1,0 +1,23 @@
+#promises {
+    border: 1px black solid;
+    width: 700px;
+    height: 300px;
+    margin-left: 100px;
+    background-color: blanchedalmond;
+}
+#myCanvas {
+    margin-left: 100px;
+}
+#myCanvas2 {
+    margin-left: 100px;
+}
+#search {
+    margin-left: 100px;
+}
+#shopping-container {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
