@@ -35,8 +35,8 @@ CREATE Table `class` (
 
 --junction table : student_course
 CREATE Table `student_course` (
-    `student_id` INT(10) unsigned NOT NULL AUTO_INCREMENT,
-    `course_id` INT(10) unsigned NOT AUTO_INCREMENT,
+    `student_id` INT(10) unsigned NOT NULL,
+    `course_id` INT(10) unsigned NO NULL,
     PRIMARY KEY(`student_id`, `course_id`),
     CONSTRAINT `fk_student_course_student` FOREIGN KEY (`student_id`) REFERENCES `student` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT `fk_student_course_course` FOREIGN KEY (`course_id`) REFERENCES `course` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
