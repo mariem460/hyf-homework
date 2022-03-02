@@ -28,12 +28,13 @@ app.get('/meals', async(request, response) => {
 // that are cheap (you define what a cheap meal is)
 app.get("/cheap-meals", async (request, response) => {
   const cheapMeals = meals
-  .filter(meal => meal.price <= 50)
-  .map((meal)=> {meal.reviews = reviews
-  .filter((review)=> review.mealId === meal.id)
-  return meal;
-  })
-  response.send(cheapMeals);
+    .filter(meal => meal.price <= 50)
+    .map((meal) => {
+      meal.reviews = reviews
+        .filter((review) => review.mealId === meal.id)
+      return meal;
+    })
+    response.send(cheapMeals);
 });
 
 //Respond with the json for all the meals (including it's reviews) that can fit lots of people
@@ -51,13 +52,10 @@ app.get("/large-meals", async (request, response) => {
 //Respond with the json for a random meal (including it's reviews)
 app.get("/meal", async (request, response) => {
   const randomIndex = Math.floor(Math.random() * meals.length);
-  const randomMeal = [meals[randomIndex]];
-  const RandomMealRev = randomMeal
-  .map((anyMeal)=> {anyMeal.reviews = reviews
-  .filter(review => review.mealId === anyMeal.id)
-  return randomMeal;
-})
-  response.send(RandomMealRev);
+  const randomMeal = meals[randomIndex];
+  randomMeal.reviews = reviews
+  .filter((review)=> review.mealId === randomMeal.id)
+  response.send(randomMeal);
 });
 
 //Respond with the json for all reservations
@@ -68,7 +66,7 @@ app.get("/reservations", async (request, response) => {
 //	Respond with the json for a random reservation
 app.get("/reservation", async (request, response) => {
   const randomIndex = Math.floor(Math.random() * reservations.length);
-  const randomReservation = [reservations[randomIndex]];
+  const randomReservation = reservations[randomIndex];
   response.send(randomReservation);
 });
 
