@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome to my To Do List</h1>
-      <ListToDo hellou = {thingsToDo}/>
+      <ListToDo ListToDo = {thingsToDo}/>
       
     </div>
   );

@@ -1,11 +1,11 @@
-import { ActionAttributes } from "./ActionAttributes";
+import { ActionAttributes, TodolistItems } from "./TodolistItems";
 
 export function ListToDo(props) {
     return(
         <ul>
-                {props.hellou.map((thing)=> {
+                {props.ListToDo.map((thing)=> {
                     return ( 
-                        <ActionAttributes description = {thing.description}  date= {thing.date}
+                        <TodolistItems description = {thing.description}  date= {thing.date}
                         id= {thing.id}/>
                     )
                 })}
