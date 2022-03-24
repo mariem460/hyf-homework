@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "./TodoItem.css"
 
-
 function TodoItem({description, deleteItem, id }) {
   const [checked, setChecked] = useState(false);
   const changedBox = (event) => {
@@ -12,10 +11,7 @@ function TodoItem({description, deleteItem, id }) {
 
   const handelRemove = () => {
     deleteItem(id)
-
-   
   }
-
   return (
     <div className='items-container'>
       <div className='items'>
@@ -32,12 +28,5 @@ function TodoItem({description, deleteItem, id }) {
     </div>
   )
 }
-
-
-const f = () => { return 1; }
-const p = f
-
-const x = f()
-const v = p()
 
 export default TodoItem;
