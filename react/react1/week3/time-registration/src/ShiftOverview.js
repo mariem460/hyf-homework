@@ -33,8 +33,9 @@ console.log("inital state", allUsers)
     const handelClick = () => {
       setClicked(true);
       setSearchedUser(allUsers
-        .filter((userInfo)=> userInfo.name.toLowerCase().startsWith(inputValue?.toLowerCase()))
-        )}
+        .filter((userInfo) => {
+          return inputValue && userInfo.name.toLowerCase().startsWith(inputValue.toLowerCase())
+        }))}
    
   return (
     <div className= "overview">
