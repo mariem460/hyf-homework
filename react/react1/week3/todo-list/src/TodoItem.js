@@ -45,9 +45,11 @@ const updateDescByNewValue = () => {
           <input type="checkbox" onChange={changedBox}></input>
           <button onClick={handelRemove}>Delete</button>
           <button onClick={handleEdit}>Edit</button>
-          {editing ? (<input type="text" value={updatingDescription} onChange={handleUpdateDescription}/>) : (null)}
+          {editing ? (<div><input type="text" value={updatingDescription} onChange={handleUpdateDescription}/></div>) : (null)}
+          <br></br>
+          {editing ? (<div><input type="date" value={updatingDeadline} onChange={handleUpdateDeadline}/></div>) : (null)}
+          <br></br>
           {editing ? (<button onClick={updateDescByNewValue}>Save</button>) : (null)}
-          {editing ? (<input type="date" value={updatingDeadline} onChange={handleUpdateDeadline}/>) : (null)}
         </div>
       </div>
     </div>
