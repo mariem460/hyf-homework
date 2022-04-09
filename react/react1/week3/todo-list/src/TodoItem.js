@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import "./TodoItem.css"
 
-function TodoItem({description, deleteItem, id, deadline, updateDescription }) {
+function TodoItem({description, deleteItem, id, deadline, updateDescription, updateDeadline }) {
   const [checked, setChecked] = useState(false);
   const [editing, setEditing] = useState(false);
   const [updatingDescription, setUpdatingDescription] = useState('');
+  const [updatingDeadline, setUpdatingDeadline] = useState('');
 
   const changedBox = (event) => {
     setChecked(event.target.checked)
@@ -18,15 +19,22 @@ function TodoItem({description, deleteItem, id, deadline, updateDescription }) {
   const handleEdit = () => {
     setEditing(true);
     setUpdatingDescription(description);
+    setUpdatingDeadline(deadline);
 };
 const handleUpdateDescription = (e) => {
     const value = e.target.value;
     setUpdatingDescription(value);
 };
+
+const handleUpdateDeadline = (e) => {
+  const value = e.target.value;
+  setUpdatingDeadline(value);
+}
  //update function
 const updateDescByNewValue = () => {
         setEditing(false);
         updateDescription(id, updatingDescription);
+        updateDeadline(id, updatingDeadline)
     };
   return (
     <div className='items-container'>
@@ -38,8 +46,8 @@ const updateDescByNewValue = () => {
           <button onClick={handelRemove}>Delete</button>
           <button onClick={handleEdit}>Edit</button>
           {editing ? (<input type="text" value={updatingDescription} onChange={handleUpdateDescription}/>) : (null)}
-          {editing ? (
-                <button onClick={updateDescByNewValue}>Save</button>) : (null)}
+          {editing ? (<button onClick={updateDescByNewValue}>Save</button>) : (null)}
+          {editing ? (<input type="date" value={updatingDeadline} onChange={handleUpdateDeadline}/>) : (null)}
         </div>
       </div>
     </div>

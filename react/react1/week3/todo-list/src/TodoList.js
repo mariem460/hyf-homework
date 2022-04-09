@@ -25,8 +25,16 @@ function TodoList() {
         return todo;
       })
       setTodosState(updatedDescription)
-
   }
+  const updateDeadline = (id,deadline) => {
+    const updatedDeadline = [... todosState].map((todo)=>{
+      if (todo.id === id) {
+          todo.deadline = deadline;
+      }
+      return todo;
+    })
+    setTodosState(updatedDeadline)
+}
 
     const handelAddItem = (event) => {
     event.preventDefault();
@@ -41,7 +49,7 @@ function TodoList() {
 }
 
     const todoItems = todosState.map((todo) => (
-    <TodoItem description={todo.description} key ={todo.id} id={todo.id} deadline={todo.deadline} deleteItem = {deleteItem}   updateDescription={updateDescription} >
+    <TodoItem description={todo.description} key ={todo.id} id={todo.id} deadline={todo.deadline} deleteItem = {deleteItem}   updateDescription={updateDescription} updateDeadline= {updateDeadline} >
       </TodoItem>
   ));
     
