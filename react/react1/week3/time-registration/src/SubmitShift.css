@@ -1,0 +1,30 @@
+
+input {
+    padding: 15px;
+    margin: 10px 0px;
+}
+h1 {
+    color: purple;
+    text-align: center;
+}
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    color: rgb(55, 3, 55);
+    font-size: 18px;
+}
+
+button {
+    padding: 10px;
+    background-color: purple;
+    color:  white;
+}
+
+.success-message {
+    padding-top: 20px;
+    color: purple;
+    font-size: 20px;
+}
+  
